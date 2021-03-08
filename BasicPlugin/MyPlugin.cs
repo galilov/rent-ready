@@ -46,7 +46,7 @@ namespace BasicPlugin
 
         private static void ProcessFields(IServiceProvider serviceProvider, Entity entity, IPluginExecutionContext context)
         {
-            if (Date.Get(entity) != default) // msdyn_date field is already used
+            if (Date.Get(entity) != default)
             {
                 return;
             }
@@ -79,7 +79,7 @@ namespace BasicPlugin
             }
         }
 
-        private static Entity[] LoadExistingTimeEntries(IOrganizationService service, DateTime start, DateTime end)
+        private static DataCollection<Entity> LoadExistingTimeEntries(IOrganizationService service, DateTime start, DateTime end)
         {
             var query = new QueryExpression
             {
@@ -112,7 +112,7 @@ namespace BasicPlugin
                     }
                 }
             };
-            return service.RetrieveMultiple(query).Entities.ToArray();
+            return service.RetrieveMultiple(query).Entities;
         }
     }
 }
