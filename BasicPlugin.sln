@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicPlugin", "BasicPlugin\BasicPlugin.csproj", "{DF29A74C-7A6E-436F-8093-BECFE151381B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicPluginTests", "BasicPluginTests\BasicPluginTests.csproj", "{018A80E7-E2AE-4B02-8321-C54E1D2AB5D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DF29A74C-7A6E-436F-8093-BECFE151381B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF29A74C-7A6E-436F-8093-BECFE151381B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF29A74C-7A6E-436F-8093-BECFE151381B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{018A80E7-E2AE-4B02-8321-C54E1D2AB5D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{018A80E7-E2AE-4B02-8321-C54E1D2AB5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{018A80E7-E2AE-4B02-8321-C54E1D2AB5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{018A80E7-E2AE-4B02-8321-C54E1D2AB5D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
