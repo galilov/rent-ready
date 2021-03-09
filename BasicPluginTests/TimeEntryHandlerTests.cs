@@ -138,5 +138,19 @@ namespace BasicPlugin.Tests
 
             Assert.Fail();
         }
+
+        [TestMethod()]
+        public void TestPopulateFieldsShouldSkipHandling()
+        {
+            var entry_01_mar_2021 = new Entity("msdyn_timeentry");
+            entry_01_mar_2021.Attributes["msdyn_date"] = DateTime.Parse("2021-03-01T20:00:00.0000000Z");
+
+            var organizationService = new OrganizationService();
+
+            var timeEntryHandler = new TimeEntryHandler(organizationService);
+            timeEntryHandler.PopulateFields(entry_01_mar_2021);
+
+            Assert.AreEqual(0, organizationService.GetCreatedEntities().Count);
+        }
     }
 }
